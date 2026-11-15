@@ -1,0 +1,202 @@
+.eyebrow {
+  color: var(--color-violet);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 14px 22px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--color-accent-ink);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-strong));
+  box-shadow: 0 10px 28px #ff704d24;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.cta:hover {
+  box-shadow: 0 14px 36px #ff704d35;
+  transform: translateY(-2px);
+}
+
+.search,
+.outline,
+.filters button {
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-panel) 90%, transparent);
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.search {
+  min-width: min(280px, 100%);
+  outline: none;
+}
+
+.search:focus,
+.outline:focus-visible,
+.filters button:focus-visible {
+  border-color: var(--color-violet);
+  box-shadow: 0 0 0 4px #bd93f921;
+  outline: none;
+}
+
+.outline:hover,
+.filters button:hover {
+  border-color: color-mix(in srgb, var(--color-violet) 58%, var(--color-border));
+  background: var(--color-panel-raised);
+}
+
+.icon-button {
+  min-width: 42px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.filter-panel {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-panel) 55%, transparent);
+}
+
+.filter-group {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: start;
+  gap: 12px;
+}
+
+.filter-label {
+  padding-top: 10px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.filters .active {
+  border-color: var(--color-violet);
+  color: #21182e;
+  background: var(--color-violet);
+  box-shadow: 0 6px 20px #bd93f929;
+}
+
+.technology-filters .active {
+  border-color: var(--color-accent);
+  color: var(--color-accent-ink);
+  background: var(--color-accent);
+  box-shadow: 0 6px 20px #ff8a5b29;
+}
+
+.component-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-panel);
+  box-shadow: var(--shadow-card);
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.component-card:hover {
+  border-color: color-mix(in srgb, var(--color-violet) 50%, var(--color-border));
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.preview {
+  height: 220px;
+  background-color: var(--color-bg-soft);
+  background-image:
+    linear-gradient(#bd93f90a 1px, transparent 1px),
+    linear-gradient(90deg, #bd93f90a 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.preview iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+}
+
+.card-footer {
+  flex-wrap: wrap;
+}
+
+.card-footer > div {
+  min-width: 130px;
+  margin-right: auto;
+}
+
+.technology-badge {
+  display: inline-flex;
+  padding: 5px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  background: var(--color-bg-soft);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+.technology-html-and-css {
+  border-color: #ff8a5b45;
+  color: #ffb092;
+  background: #ff8a5b12;
+}
+
+.technology-javascript {
+  border-color: #f1fa8c45;
+  color: #f1fa8c;
+  background: #f1fa8c10;
+}
+
+.technology-tailwind-css {
+  border-color: #8be9fd45;
+  color: #8be9fd;
+  background: #8be9fd10;
+}
+
+.card-footer h3 {
+  margin: 0;
+}
+
+.card-footer h3 {
+  margin-bottom: 3px;
+  font-weight: 750;
+}
+
+.card-footer small {
+  display: block;
+  color: var(--color-text-muted);
+}
+
+.empty-state {
+  padding: 40px 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}

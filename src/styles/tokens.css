@@ -1,0 +1,35 @@
+.app-shell {
+  --color-bg: #17141f;
+  --color-bg-soft: #1d1927;
+  --color-panel: #211d2b;
+  --color-panel-raised: #292337;
+  --color-text: #f8f5ff;
+  --color-text-muted: #aaa1bb;
+  --color-border: #3b334b;
+  --color-accent: #ff8a5b;
+  --color-accent-strong: #ff704d;
+  --color-accent-ink: #21151a;
+  --color-violet: #bd93f9;
+  --color-pink: #ff79c6;
+  --shadow-card: 0 16px 44px #09070d1f;
+  --shadow-card-hover: 0 20px 54px #09070d35;
+  --radius-control: 9px;
+  --radius-card: 18px;
+}
+
+.app-shell.theme-light {
+  --color-bg: #f7f3fb;
+  --color-bg-soft: #f0eaf7;
+  --color-panel: #fffaff;
+  --color-panel-raised: #ffffff;
+  --color-text: #282032;
+  --color-text-muted: #756b82;
+  --color-border: #ddd2e7;
+  --color-accent: #ed6b42;
+  --color-accent-strong: #d95631;
+  --color-accent-ink: #fff9f5;
+  --color-violet: #7b54b6;
+  --color-pink: #c3498c;
+  --shadow-card: 0 16px 44px #3a244014;
+  --shadow-card-hover: 0 20px 54px #3a244026;
+}
